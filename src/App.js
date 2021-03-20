@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import { auth} from './config.js';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import ProtectedRoute from './components/ProtectedRoute';
+import Dashboard from './components/Dashboard';
+import Create from './components/Create';
+import Singleblog from './components/Singleblog';
+import Blogdetail from './components/Blogdetail';
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Router>
+      <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home}>
+          </Route>
+          <ProtectedRoute path="/dashboard" component={Dashboard}></ProtectedRoute>
+          <ProtectedRoute path="/create" component={Create}></ProtectedRoute>
+          <ProtectedRoute path="/blog/:id" component={Blogdetail}></ProtectedRoute>
+        </Switch>
+      </Router>
     </div>
   );
 }

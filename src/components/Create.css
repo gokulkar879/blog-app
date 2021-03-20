@@ -1,0 +1,27 @@
+.create{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    margin-top: 10%;
+    width: 50%;
+    min-width: 400px;
+}
+label{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(1, 43, 71);
+}
+.input{
+    font-size: 1.2rem  !important;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+button{
+    letter-spacing: 2px;
+    font-weight: bold;
+}

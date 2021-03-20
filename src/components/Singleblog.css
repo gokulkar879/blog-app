@@ -1,0 +1,36 @@
+.singleblog{
+    width: 30%;
+    min-width: 400px;
+    padding: 10px;
+    min-height: 250px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    background: rgb(242, 242, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+}
+.singleblog h4{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(3, 81, 95);
+    
+}
+.content{
+    margin-bottom: 10px;
+    flex: 1;
+    padding: 3px;
+}
+.content p{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.singleblog a{
+ margin: 10px 0px;
+ letter-spacing: 2px;
+ font-weight: bold;
+ color: rgb(228, 228, 255);
+ font-size: 1.1rem;
+}

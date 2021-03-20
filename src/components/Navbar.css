@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+a{
+    text-decoration: none !important;
+}
+
+.navbar{
+    background: rgb(4, 56, 87);
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around !important;
+    position: sticky !important;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem 0;
+    z-index: 100;
+}
+.navbar_home{
+    font-family: 'Chango', cursive;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+.navbar button{
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: rgb(230, 230, 253);
+}
+.navbar_dash{
+    letter-spacing: 3px;
+     font-weight: bold;
+     color: rgb(252, 231, 231);
+     font-size: 1.3rem;
+     font-family: 'Montserrat', sans-serif;
+}
